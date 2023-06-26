@@ -4,7 +4,7 @@ import { Button } from '@mui/material'
 
 
 
-export default function EmployeeDisplay({data ,removeItem, editItem}) {
+export default function AppointmentDisplay({data ,removeItem, editItem}) {
      console.log(data)
 
      const columns = [

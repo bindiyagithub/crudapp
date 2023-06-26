@@ -3,14 +3,18 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Employee from './Employee';
+
+import Employee from './Emp-views/Employee';
+import Appointment from './CRUD in Grid/Appointment';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     {/* <App /> */}
 
-    <Employee/>
+    
+   <Appointment />
+
   </React.StrictMode>
 );
 

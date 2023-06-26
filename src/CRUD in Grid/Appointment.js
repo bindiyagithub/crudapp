@@ -1,10 +1,10 @@
 import { Button } from '@mui/material'
 import React, { useState } from 'react'
-import EmployeeForm from './EmployeeForm'
-import EmployeeDisplay from './EmployeeDisplay'
+import AppointmentForm from './AppointmentForm';
+import AppointmentDisplay from './AppointmentDisplay';
 
 
-export default function Employee() {
+export default function Appointment() {
      const [open , setOpen] = useState(false)
 
      //  open dialogbox by onclick Add Appointment Butoon
@@ -43,14 +43,14 @@ export default function Employee() {
   return (
     <div >
      <Button variant='outlined' onClick={handleClickOpen} className='m-3'>
-         Add Employee
+         Add Appointment
      </Button>
 
-     <EmployeeForm open = {open} close = {handleClose}
+     <AppointmentForm open = {open} close = {handleClose}
                         data = {data} setData = {setData} 
                         id={id} setId = {setId} />
      
-     <EmployeeDisplay data = {data} removeItem = {removeItem}
+     <AppointmentDisplay data = {data} removeItem = {removeItem}
                          editItem = {editItem} />
     </div>
   )
